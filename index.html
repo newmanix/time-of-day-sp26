@@ -75,13 +75,18 @@
         let myPic = "";
 
         //TESTING ONLY REMOVE FOLLOWING LINE:
-        myHour = 7;
+        myHour = 14;
 
         if(myHour >= 5 && myHour < 12){
-            //alert("It's after noon!");
             mySentence = "Good Morning!";
             myColor = "orange";
             myPic = "morning.jpg";
+
+        }else if(myHour >= 12 && myHour < 18){
+            mySentence = "Good Afternoon!";
+            myColor = "green";
+            myPic = "afternoon.jpg";
+            
         }else{
         //alert("It's not after noon!");
             mySentence = "It's night!";
