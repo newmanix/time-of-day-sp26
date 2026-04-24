@@ -55,11 +55,15 @@
     </div>
 
     <script>
-        // We will use this section to write our if/else logic
-        // Example: document.querySelector('#time-text').innerHTML = "Good Morning!";
-        
-        /* Below, we would target the 'html' element to change 
-           the background color using document.querySelector('html') 
+        /*
+            Use JavaScript to determine the current hour, and present a 
+            different image, custom message, and color based on each of 
+            the following times of day:
+
+            Morning (5am to 12 noon)
+            Afternoon (12 noon to 6pm)
+            Evening (6pm to 11pm)
+            Night (11pm to 5am)
         */
 
 
@@ -70,11 +74,14 @@
         let myColor = "";
         let myPic = "";
 
-        if(myHour >= 12){
+        //TESTING ONLY REMOVE FOLLOWING LINE:
+        myHour = 7;
+
+        if(myHour >= 5 && myHour < 12){
             //alert("It's after noon!");
-            mySentence = "It's after noon!";
-            myColor = "blue";
-            myPic = "afternoon.jpg";
+            mySentence = "Good Morning!";
+            myColor = "orange";
+            myPic = "morning.jpg";
         }else{
         //alert("It's not after noon!");
             mySentence = "It's night!";
